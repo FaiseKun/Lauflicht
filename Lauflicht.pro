@@ -26,13 +26,17 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        gui.cpp
+        gui.cpp \
+    gpio.cpp
 
 HEADERS += \
-        gui.h
+        gui.h \
+    gpio.h
 
 FORMS += \
         gui.ui
+
+LIBS += -llgpio
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
